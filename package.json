@@ -1,0 +1,52 @@
+{
+    "name": "rollup-boilerplate",
+    "version": "0.0.1",
+    "description": "Rollup boilerplate",
+    "main": "dist/rollup-boilerplate.cjs.js",
+    "module": "dist/rollup-boilerplate.es.js",
+    "types": "types/index.d.ts",
+    "sideEffects": false,
+    "homepage": "https://github.com/yuanzhhh/rollup-boilerplate",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yuanzhhh/rollup-boilerplate"
+    },
+    "keywords": [
+        "rollup-boilerplate",
+        "rollup boilerplate",
+        "rollup template"
+    ],
+    "author": {
+        "name": "evan",
+        "email": "evan.yuanzh@gmail.com"
+    },
+    "license": "MIT",
+    "files": [
+        "dist/[^.]*",
+        "types/[^.]*",
+        "docs/[^.]*",
+        "doc/[^.]*"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "node test/index.js",
+        "pretest": "npm run build"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^21.0.3",
+        "@rollup/plugin-json": "^4.1.0",
+        "@rollup/plugin-node-resolve": "^13.2.0",
+        "@rollup/plugin-typescript": "^8.3.1",
+        "@typescript-eslint/eslint-plugin": "^5.19.0",
+        "@typescript-eslint/parser": "^5.19.0",
+        "eslint": "^8.13.0",
+        "package-tls": "^1.2.2",
+        "path": "^0.12.7",
+        "rollup": "^2.70.1",
+        "rollup-plugin-terser": "^7.0.2",
+        "ts-node": "^10.7.0",
+        "tslib": "^2.3.1",
+        "typescript": "^4.6.3"
+    }
+}
